@@ -10,6 +10,9 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+main {
+  text-align: center;
+}
 .container {
   height: 100%;
   width: 1280px;
@@ -99,16 +102,17 @@ header .teaser a.cta {
   padding: 20px 15px;
 }
 /* Fine teaser */
-
 /* FINE HEADER */
 
 /* INIZIO MAIN */
-
+main h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
 /* banner */
 main .banner {
   height: 150px;
   background: #d9d9dd;
-  text-align: center;
 }
 main .banner .text-banner {
   width: 100%;
@@ -117,12 +121,39 @@ main .banner .text-banner {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .banner .text-banner h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
 main .banner .text-banner span {
   font-size: 20px;
   color: gray;
 }
+/* Fine banner */
+
+/* section */
+main section {
+  margin: 50px 0;
+}
+
+/* box */
+main .box {
+  width: 30%;
+}
+main .above .box {
+  margin: 0 calc(5% / 3);
+}
+main .above .box img {
+  height: 200px;
+  margin-bottom: 30px
+}
+main .above .box h3 {
+  color: #7dba00;
+}
+main .above .box hr {
+  width: 80px;
+  margin: 30px auto;
+  border: 1px solid gray;
+}
+main .box p {
+  color: gray;
+  line-height: 25px;
+}
+/* Fine box */
 /* FINE MAIN */
