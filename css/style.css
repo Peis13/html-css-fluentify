@@ -11,8 +11,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .container {
+  height: 100%;
   width: 1280px;
   margin: auto;
+  position: relative;
 }
 ul {
   list-style-type: none;
@@ -27,11 +29,15 @@ ul {
 }
 /* FINE REGOLE GENERALI */
 
-/* HEADER */
+/* INIZIO HEADER */
 header {
+  background-image: url(../img/background-header.png);
+  background-repeat: no-repeat;
+  background-size: 1024px;
+  background-position: 107% 100%;
   color: white;
   background-color: #0d325a;
-  height: 500px;
+  height: 600px;
 }
 /* menù navigazione */
 header nav {
@@ -51,14 +57,14 @@ header nav .menu-right {
 header nav .menu li {
   display: inline-block;
 }
-header nav .menu li a {
+header a {
   color: white;
   font-size: 12px;
   margin-right: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
-header nav .menu li a:hover {
+header a:hover {
   color: orange;
 }
 header nav .menu li a.login {
@@ -66,14 +72,35 @@ header nav .menu li a.login {
   border-radius: 5px;
   padding: 10px 50px;
 }
-header nav .menu li a.item-green {
+header a.item-green {
   background: #7dba00;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 /* Fine menù navigazione */
 
 /* teaser */
+header .teaser {
+  width: 640px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+header .teaser h1 {
+  font-size: 60px;
+}
+header .teaser a {
+  margin-top: 30px;
+  display: inline-block;
+}
+header .teaser a.cta {
+  font-size: 15px;
+  padding: 20px 15px;
+}
 /* Fine teaser */
 
 /* FINE HEADER */
+
+/* INIZIO MAIN */
+/* FINE MAIN */
