@@ -1,0 +1,79 @@
+/* INIZIO RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* REGOLE GENERALI */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 1280px;
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+}
+.col {
+  float: left;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* FINE REGOLE GENERALI */
+
+/* HEADER */
+header {
+  color: white;
+  background-color: #0d325a;
+  height: 500px;
+}
+/* menù navigazione */
+header nav {
+  padding-top: 10px;
+  line-height: 50px;
+}
+header nav .logo {
+  width: 15%;
+}
+header nav .menu-center {
+  width: 45%;
+}
+header nav .menu-right {
+  width: 40%;
+  text-align: right;
+}
+header nav .menu li {
+  display: inline-block;
+}
+header nav .menu li a {
+  color: white;
+  font-size: 12px;
+  margin-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header nav .menu li a:hover {
+  color: orange;
+}
+header nav .menu li a.login {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 50px;
+}
+header nav .menu li a.item-green {
+  background: #7dba00;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+/* Fine menù navigazione */
+
+/* teaser */
+/* Fine teaser */
+
+/* FINE HEADER */
