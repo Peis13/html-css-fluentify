@@ -6,6 +6,16 @@
 }
 /* FINE RESET */
 
+/* HELP */
+.help {
+  line-height: 34px;
+  position: fixed;
+  bottom: 0;
+  right: 7%;
+  transform: translate(-50%, 0);
+}
+/* FINE HELP */
+
 /* REGOLE GENERALI */
 body {
   font-family: 'Roboto', sans-serif;
@@ -15,20 +25,52 @@ main {
 }
 .container {
   height: 100%;
-  width: 1280px;
+  width: 90%;
   margin: auto;
   position: relative;
+}
+.col {
+  float: left;
+}
+.banner {
+  height: 150px;
+  background: #d9d9dd;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 ul {
   list-style-type: none;
 }
-.col {
-  float: left;
+a.item-green {
+  background: #7dba00;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+.white a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.white a:hover {
+  color: orange;
+}
+a.cta {
+  font-size: 15px;
+  padding: 20px 15px;
 }
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
+}
+.right {
+  text-align: right;
+}
+.right > * {
+  margin-left: 20px;
 }
 /* FINE REGOLE GENERALI */
 
@@ -55,30 +97,17 @@ header nav .menu-center {
 }
 header nav .menu-right {
   width: 40%;
-  text-align: right;
 }
 header nav .menu li {
   display: inline-block;
-}
-header a {
-  color: white;
-  font-size: 12px;
-  margin-right: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-header a:hover {
-  color: orange;
 }
 header nav .menu li a.login {
   border: 1px solid white;
   border-radius: 5px;
   padding: 10px 50px;
 }
-header a.item-green {
-  background: #7dba00;
-  border-radius: 5px;
-  padding: 10px 10px;
+header nav .menu-center .menu li a{
+  margin-right: 20px;
 }
 /* Fine menù navigazione */
 
@@ -97,23 +126,11 @@ header .teaser a {
   margin-top: 30px;
   display: inline-block;
 }
-header .teaser a.cta {
-  font-size: 15px;
-  padding: 20px 15px;
-}
 /* Fine teaser */
 /* FINE HEADER */
 
 /* INIZIO MAIN */
-main h3 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
 /* banner */
-main .banner {
-  height: 150px;
-  background: #d9d9dd;
-}
 main .banner .text-banner {
   width: 100%;
   position: absolute;
@@ -127,15 +144,18 @@ main .banner .text-banner span {
 }
 /* Fine banner */
 
-/* section */
+/* section box */
 main section {
   margin: 50px 0;
 }
-
-/* box */
 main .box {
   width: 30%;
 }
+main .box p {
+  color: gray;
+  line-height: 25px;
+}
+/* above */
 main .above .box {
   margin: 0 calc(5% / 3);
 }
@@ -151,9 +171,44 @@ main .above .box hr {
   margin: 30px auto;
   border: 1px solid gray;
 }
-main .box p {
-  color: gray;
-  line-height: 25px;
+/* under */
+main .under .box a {
+  display: inline-block;
+  color: #2c95c5;
+  margin-top: 20px;
 }
-/* Fine box */
+main .under .box {
+  margin: 0 calc(20% / 2);
+}
+main .under .box:last-child {
+  text-align: left;
+}
+/* Fine section box */
 /* FINE MAIN */
+
+/* INIZIO FOOTER */
+footer .banner .col {
+  width: 50%;
+}
+footer .banner {
+  line-height: 150px;
+}
+footer .banner h3 {
+  margin: 0;
+}
+
+/* sezione credenziali */
+footer .banner .come-from {
+  color: gray;
+}
+footer .banner .come-from #nationality {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+  background: #d9d9dd;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+/* Fine sezione credenziali */
+
+/* FINE FOOTER */
